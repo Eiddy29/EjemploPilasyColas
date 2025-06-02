@@ -18,6 +18,8 @@ public class EjemploPilas {
 	            System.out.println("4. Mostrar todos los elementos");
 	            System.out.println("5. Verificar si la pila está vacía");
 	            System.out.println("6. Salir");
+		    System.out.println("7. Ver tamaño de la pila");
+		    System.out.println("8. Vaciar pila");
 	            System.out.print("Seleccione una opción: ");
 	            
 	            opcion = scanner.nextInt();
@@ -63,7 +65,16 @@ public class EjemploPilas {
 	                case 6:
 	                    System.out.println("Saliendo del programa...");
 	                    break;
-	                    
+
+			case 7:
+  			    System.out.println("Tamaño de la pila: " + pila.size());
+    			    break;
+
+			case 8:
+   			    pila.clear();
+  			    System.out.println("La pila ha sido vaciada.");
+ 			    break;
+				    
 	                default:
 	                    System.out.println("Opción no válida. Por favor, intente nuevamente.");
 	            }
