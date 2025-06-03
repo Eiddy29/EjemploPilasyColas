@@ -18,7 +18,8 @@ public class EjemploColas {
 	            System.out.println("3. Ver el frente de la cola");
 	            System.out.println("4. Mostrar todos los elementos");
 	            System.out.println("5. Verificar si la cola está vacía");
-	            System.out.println("6. Salir");
+	            System.out.println("6. Mostrar cantidad de elementos en la cola");
+				System.out.println("7. Salir");
 	            System.out.print("Seleccione una opción: ");
 	            
 	            opcion = scanner.nextInt();
@@ -62,6 +63,10 @@ public class EjemploColas {
 	                    break;
 	                    
 	                case 6:
+						System.out.println("Tamaño actual de la cola: " + cola.size());
+						break;
+	                    
+	                case 7:
 	                    System.out.println("Saliendo del programa...");
 	                    break;
 	                    
